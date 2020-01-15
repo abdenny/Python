@@ -49,7 +49,7 @@
 #         print("Bye")
 #         break
 
-#4. 
+# 4. 
 # width = int(input("width?"))
 # height = int(input("height?"))
 # print("*" * width)
@@ -94,18 +94,18 @@
 
 # print(f"The factors of {number} are {factors}")
 
-#3. 
-import random
-my_random_number = random.randint(1,10)
-number_of_guesses = 1
-while number_of_guesses <= 5:
-    print("I'm thinking of a number between 1 and 10...")
-    their_guess = int(input("What number am I thinking of?"))
-    number_of_guesses +=1
-    if their_guess < my_random_number:
-        print(f"{their_guess} is too low, Try again. ")
-    if their_guess > my_random_number:
-        print(f"{their_guess} is too high, Try again. ")
-    if their_guess == my_random_number:
-        print ("Congrats, you're correct!")
-        break
+# #3. 
+# import random
+# my_random_number = random.randint(1,10)
+# number_of_guesses = 1
+# while number_of_guesses <= 5:
+#     print("I'm thinking of a number between 1 and 10...")
+#     their_guess = int(input("What number am I thinking of?"))
+#     number_of_guesses += 1
+#     if their_guess < my_random_number:
+#         print(f"{their_guess} is too low, Try again. ")
+#     if their_guess > my_random_number:
+#         print(f"{their_guess} is too high, Try again. ")
+#     if their_guess == my_random_number:
+#         print ("Congrats, you're correct!")
+#         break
