@@ -1,3 +1,5 @@
+#####1/14
+#####Medium problems for HW
 #1.
 # bill_ammount = input("I hope you enjoyed your meal! How much was your total? ")
 # service = input("Was your service good, fair, or bad?")
@@ -62,9 +64,48 @@
 #     print('* '*(i)) 
 #     n-=1
 
-6.
-for i in range (1,11):
-    for n in range (1,11):
-        result = i * n
-        print(str(i) + "   " + "X    "+str(n) + "=" + str(result))
+# 6.
+# for i in range (1,11):
+#     for n in range (1,11):
+#         result = i * n
+#         print(str(i) + "   " + "X    "+str(n) + "=" + str(result))
 
+
+#####Large Problems
+# 1.
+#  number = 0 
+# for i in range(1,100):
+#     number = number + i
+#     print(number)
+#
+# or
+#
+# result = 0
+# for i in range(1,100):
+#     result += i
+#     print(f"{i + 1}: {result} ")
+
+#2.
+# number = int(input("input a number "))
+# factors = []
+# for i in range(1, number+1):
+#     if number % i == 0:
+#         factors.append(i)
+
+# print(f"The factors of {number} are {factors}")
+
+#3. 
+import random
+my_random_number = random.randint(1,10)
+number_of_guesses = 1
+while number_of_guesses <= 5:
+    print("I'm thinking of a number between 1 and 10...")
+    their_guess = int(input("What number am I thinking of?"))
+    number_of_guesses +=1
+    if their_guess < my_random_number:
+        print(f"{their_guess} is too low, Try again. ")
+    if their_guess > my_random_number:
+        print(f"{their_guess} is too high, Try again. ")
+    if their_guess == my_random_number:
+        print ("Congrats, you're correct!")
+        break
