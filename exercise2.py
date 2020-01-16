@@ -41,12 +41,12 @@
 # print(result_list)
 
 
-#4.
+# 4.
 # list_1 = [1, 1, 2, 3, 4, 4, 5, 5, 6, 7, 7, 8]
 # new_list = []
-# for letter in list_1:
-#     if letter not in new_list:
-#         new_list.append(letter)
+# for number in list_1:
+#     if number not in new_list:
+#         new_list.append(number)
 # print(new_list)
 
 #5.
@@ -86,18 +86,18 @@
 # result = "".join(lengthened_word)
 # print(result)
 
-# #7.
-# alphabet = "abcdefghijklmnopqrstuvwxyz"
-# scrambled_phrase = "lbh zhfg hayrnea jung lbh unir yrnearq"
-# key = 13
-# result = ""
+#7.
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+scrambled_phrase = "lbh zhfg hayrnea jung lbh unir yrnearq"
+key = 13
+result = ""
 
-# for letter in scrambled_phrase:
-#     if letter not in alphabet:
-#         unknown_phrase = letter
-#     if letter in alphabet:
-#         search_letter_location = alphabet.find(letter)
-#         search_2 = (search_letter_location + key) % 26
-#         unknown_phrase = alphabet[search_2]
-#     result += unknown_phrase
-# print(result)
+for letter in scrambled_phrase:
+    if letter not in alphabet:
+        unknown_phrase = letter
+    if letter in alphabet:
+        search_letter_location = alphabet.find(letter)
+        search_2 = (search_letter_location + key) % 26
+        unknown_phrase = alphabet [search_2]
+    result += unknown_phrase
+print(result)

@@ -1,44 +1,63 @@
 ##### 1/16
 ### Small
-#1.
+# 1.
 # def madlib (name, subject):
-#     print(f"{name}\'s favorite subject is {subject}")
+#     statement = (f"{name}\'s favorite subject is {subject}")
+#     return statement
 
-# madlib("austin", "biology")
+# results = madlib("austin", "biology")
+# print(results)
 
 
 #2.
 # def c_to_f (temp):
 #     F = (temp * 9/5) + 32
-#     print(F)
+#     return F
 
-# c_to_f(56)
+# temperature = c_to_f(56)
+# print(temperature)
 
 
 #3.
 # def f_to_c (temp):
 #     C = (temp - 32) * (5 / 9)
-#     print(C)
+#     return C
 
-# f_to_c(100)
+# temperature = f_to_c(100)
+# print(temperature)
+
+######testing for nesting 
+# def c_to_f (temp):
+#     F = (temp * 9/5) + 32
+#     return F
+
+
+# def f_to_c (temp):
+#     C = (temp - 32) * (5 / 9)
+#     return C
+
+# print(c_to_f(f_to_c(25)))
+
 
 
 # 4. 
 # def is_even (number):
 #     if (number % 2) == 0:
-#         print(True)
+#         return(True)
 #     else:
-#         print(False)
+#         return(False)
 
-# is_even(35)
+# print(is_even(35))
 
 
 # #5.
 # def is_odd (is_even):
 #     if is_even != True:
-#         print("The number is odd")
+#         return("The number is odd")
+#     else:
+#         return("the number is even")
 
-# is_odd(is_even)
+# print(is_odd(is_even))
 
 
 #6.
@@ -47,9 +66,9 @@
 #     for i in list_of_numbers:
 #         if (i % 2) == 0:
 #             even_numbers.append(i)
-#     print(even_numbers)
+#     return(even_numbers)
 
-# only_evens([1,2,4,5,56,89,102])
+# print(only_evens([1,2,4,5,56,89,102]))
 
 #7.
 # def only_odds (list_of_nums):
@@ -64,27 +83,26 @@
 ### Medium
 #1.
 # def smallest (list_nums):
-#     print(min(list_nums))
+#     return (min(list_nums))
 
-# smallest([34,67,89,101])
+# print(smallest([34,67,89,101]))
+
 
 # #2.
 # def largest (list_nums):
-#     print(max(list_nums))
+#     return(max(list_nums))
 
-# largest([34,67,89,101])
+# print(largest([34,67,89,101]))
 
 #3. ### Using pythons key parameter to specify sorting value. Setting this equal to the len function to fid the shortest value.
 # def shortest (list_of_strings):
-#     print(min(list_of_strings, key=len))
+#     return(min(list_of_strings, key=len))
 
-# shortest(["dog", "bird", "pizza"])
+# print(shortest(["dog", "bird", "pizza"]))
 
 #4.
 # def longest (list_of_strings):
-#     print(max(list_of_strings, key=len))
+#     return(max(list_of_strings, key=len))
 
-# longest(["dog", "bird", "pizza"])
+# print(longest(["dog", "bird", "pizza"]))
 
-###Large
-#
