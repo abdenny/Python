@@ -44,33 +44,60 @@
 #4.
 # list_1 = [1, 1, 2, 3, 4, 4, 5, 5, 6, 7, 7, 8]
 # new_list = []
-# for index in list_1:
-#     if index not in new_list:
-#         new_list.append(index)
+# for letter in list_1:
+#     if letter not in new_list:
+#         new_list.append(letter)
 # print(new_list)
 
-# #5.
-# A, E, G, I, O, S, T = (4, 3, 6, 1, 0, 5, 7)
-# string_given = "I am a leet programmer"
-# print()
-
-#6.
+#5.
 # statement = ("I am a leet programmer").upper()
 # leet_list = list(statement)
-# for i in range(len(leet_list)):
-#     if leet_list[i]== "A":
-#         leet_list[i] = "4"
-#     elif leet_list[i] == "E":
-#         leet_list[i] = "3"
-#     elif leet_list[i] == "G":
-#         leet_list[i] = "6"
-#     elif leet_list[i] == "I":
-#         leet_list[i] = "1"
-#     elif leet_list[i] == "O":
-#         leet_list[i] = "0"
-#     elif leet_list[i] == "S":
-#         leet_list[i] = "5"
-#     elif leet_list[i] == "T":
-#         leet_list[i] = "7"
+# for letter in range(len(leet_list)):
+#     if leet_list[letter]== "A":
+#         leet_list[letter] = "4"
+#     elif leet_list[letter] == "E":
+#         leet_list[letter] = "3"
+#     elif leet_list[letter] == "G":
+#         leet_list[letter] = "6"
+#     elif leet_list[letter] == "I":
+#         leet_list[letter] = "1"
+#     elif leet_list[letter] == "O":
+#         leet_list[letter] = "0"
+#     elif leet_list[letter] == "S":
+#         leet_list[letter] = "5"
+#     elif leet_list[letter] == "T":
+#         leet_list[letter] = "7"
 # leet_statement = "".join(leet_list).lower()
 # print(leet_statement)
+#
+
+#6.
+# word = input("Please enter a word ")
+# converted_word = list(word.lower())
+# lengthened_word = []
+
+# lengthened_vowels = {"a" : "aaa", "e" : "eee", "i" : "iii", "o" : "ooo", "u" : "uuu"}
+# for letter in converted_word:
+#     if letter in lengthened_vowels:
+#         letter = lengthened_vowels[letter]
+#         lengthened_word.append(letter)
+#     else: 
+#         lengthened_word.append(letter)
+# result = "".join(lengthened_word)
+# print(result)
+
+# #7.
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+# scrambled_phrase = "lbh zhfg hayrnea jung lbh unir yrnearq"
+# key = 13
+# result = ""
+
+# for letter in scrambled_phrase:
+#     if letter not in alphabet:
+#         unknown_phrase = letter
+#     if letter in alphabet:
+#         search_letter_location = alphabet.find(letter)
+#         search_2 = (search_letter_location + key) % 26
+#         unknown_phrase = alphabet[search_2]
+#     result += unknown_phrase
+# print(result)
