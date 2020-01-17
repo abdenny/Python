@@ -70,16 +70,16 @@
 
 # print(result)
 
-def cal_avg(list_of_num):
-    sum = 0
-    for i in list_of_num:
-        sum += i
-    avg = sum / len(list_of_num)
-    return avg
+# def cal_avg(list_of_num):
+#     sum = 0
+#     for i in list_of_num:
+#         sum += i
+#     avg = sum / len(list_of_num)
+#     return avg
 
-num_list = [1,2,3,4,5,6,7,8,9]
-results = cal_avg(num_list)
-print(results)
+# num_list = [1,2,3,4,5,6,7,8,9]
+# results = cal_avg(num_list)
+# print(results)
 
 # def myFunction(num1, num2, num3):
 
