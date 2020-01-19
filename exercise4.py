@@ -45,7 +45,32 @@
 #         in_dict[""]
 
 ###Med
-#1.
+# #1.
+# letter_histogram = {}
+# entered_word = input("Please enter a word... ")
+# for repeats in entered_word:
+#     if repeats not in letter_histogram:
+#         letter_histogram[repeats] = 0
+#     letter_histogram[repeats] += 1
+# print(letter_histogram)
 
+#2.
+# sent_histogram = {}
+# entered_sentence = input("Please enter a sentence... ")
+# sent_to_words = entered_sentence.split()
+# for repeats in sent_to_words:
+#     if repeats not in sent_histogram:
+#         sent_histogram[repeats] = 0
+#     sent_histogram[repeats] += 1
+# print(sent_histogram)
 
-
+#3.
+sent_histogram = {}
+entered_sentence = input("Please enter a sentence... ")
+sent_to_words = entered_sentence.split()
+for repeats in sent_to_words:
+    if repeats not in sent_histogram:
+        sent_histogram[repeats] = 0
+    sent_histogram[repeats] += 1
+for key, value in sorted(sent_histogram.items(), key=lambda kv: kv[1], reverse=True):
+    print("%s: %s" % (key, value))
