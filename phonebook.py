@@ -33,7 +33,7 @@ while True:
     elif user_action == 3:
         delete_entry = input("What is the name of the person you'd like to delete from the phonebook? ")
         del phonebook_dictionary[delete_entry]
-        print("Your entry has been deleted")
+        print("Your entry has been deleted.")
     elif user_action == 4:
         print(phonebook_dictionary)
     elif user_action == 5:
@@ -42,6 +42,6 @@ while True:
         print("Closing the program!")
         break    
     else:
-        print("Please try again")
+        print("Please try again.")
 
 
