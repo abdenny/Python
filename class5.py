@@ -96,29 +96,145 @@
 
 
 
-import datetime
+# import datetime
 
-class Person: 
-    def __init__(self, fname, lname, birthdate, address, email):
-        self.fname = fname 
-        self.lname = lname 
-        self.birthdate = birthdate
-        self.address = address
-        self.email = email
+# class Person: 
+#     def __init__(self, fname, lname, birthdate, address, email):
+#         self.fname = fname 
+#         self.lname = lname 
+#         self.birthdate = birthdate
+#         self.address = address
+#         self.email = email
     
-    def age(self):  ####USing the info passed into the class in another metod to reurn age
-        today = datetime.date.today()
-        age = today.year - self.birthdate.year
-        if today < datetime.date(today.year, self.birthdate.month, self.birthdate.day):
-            age -= 1
+#     def age(self):  ####USing the info passed into the class in another metod to reurn age
+#         today = datetime.date.today()
+#         age = today.year - self.birthdate.year
+#         if today < datetime.date(today.year, self.birthdate.month, self.birthdate.day):
+#             age -= 1
         
-        return age
+#         return age
 
 
-sammy = Person("sammy", "kry", datetime.date(1998, 8, 21), "123 Ses St", "Email")
+# sammy = Person("sammy", "kry", datetime.date(1998, 8, 21), "123 Ses St", "Email")
 
-print(f"{sammy.fname} {sammy.lname}")
-print(sammy.lname)
+# print(f"{sammy.fname} {sammy.lname}")
+# print(sammy.lname)
 
-age = sammy.age()
-print(age)
+# age = sammy.age()
+# print(age)
+##########
+# def greeting(name):
+#     count = 0
+#     print(f"hello {name}")
+#     count += 1
+#     print(count)
+
+# greeting("Austin")
+# greeting("Alex")
+# greeting("Jaye")
+# greeting("Meryem")
+#
+#or
+#
+# class Person:
+#     def __init__(self, name):
+#         self.name = name 
+#         self.count = 0
+
+#     def greeting(self):
+#         print(f"Hello {self.name}")
+#         self.count += 1
+    
+#     def print_count(self):
+#         print(self.count)
+
+# austin = Person("austin")
+# austin.greeting()
+# austin.greeting()
+# austin.greeting()
+# austin.greeting()
+# austin.greeting()
+# austin.print_count()
+
+###########
+# class Person: 
+#     def __init__(self, name, email, phone):
+#         self.name = name
+#         self.email = email
+#         self.phone = phone
+
+#     def greet(self, other_person):
+#         print('Hello {}, I am {}!'.format(other_person.name, self.name))
+
+# sonny = Person("Sonny", "sonny@hotmail.com", "483-485-4948")
+# jordan = Person("Jordan", "jordan@aol.com", "495-586-3456")
+# sonny.greet(jordan)
+# jordan.greet(sonny)
+# print(f"Sonny's email address is {sonny.email}. Sonny's phone number is {sonny.phone}")
+# print(f"Jordan's email address is {jordan.email}. Jordans phone number is {jordan.phone}")
+
+######## Starting methods with underscore is the convention for not accessing private methods, double underscore is super private. However, python still allows it.
+
+####Inheritance
+# all strings are objects based on the string class
+# inherit base class of string, creating a reverse string
+# class  Vstring(str):
+#     def reverse(self, name):
+#         rstring = ""
+#         for char in name:
+#             rstring = char + rstring
+#         return rstring
+# my_string = Vstring("hello")
+# print(my_string.capitalize())
+# reversed = my_string.reverse("hello")
+# print(reversed)
+
+###########################
+# class Character:
+#     def __init__(self, name, power, health):
+#         self.name = name 
+#         self.power = power 
+#         self.health = health 
+
+# class Hero(Character):
+#     def __init__(self, weapon, name, power, health):
+#         self.weapon = weapon 
+#         super(Hero, self).__init__(name, power, health)
+
+# alina = Hero("pinkgun", "alina", 3, 10)
+
+# #####only alina.weapon is initialized, we have to intialize the attributes from the base class. Since it has one init it's satisfied. We have to call super().
+# print(alina.power)
+
+########## Making a vehicle class
+# class Vehicle:
+#     def __init__(self, make, model, year):
+#         self.make = make 
+#         self.model = model 
+#         self.year = year 
+    
+#     def print_info(self):
+#         print(self.make, self.model, self.year)
+
+
+# car = Vehicle("Nissan", "Leaf", "2015")
+# print(car.make, car.model, car.year)
+# car.print_info()
+
+######### Sonny and Jordan part 2
+# class Person: 
+#     def __init__(self, name, email, phone):
+#         self.name = name
+#         self.email = email
+#         self.phone = phone
+
+
+#     def greet(self, other_person):
+#         print('Hello {}, I am {}!'.format(other_person.name, self.name))
+
+#     def print_contact_info(self):
+#         print(f"Sonny's email is : {self.email}. Sonny's phone number is: {self.phone}")
+
+# sonny = Person("Sonny", "sonny@hotmail.com", "483-485-4948")
+# jordan = Person("Jordan", "jordan@aol.com", "495-586-3456")
+# sonny.print_contact_info()
