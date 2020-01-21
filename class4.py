@@ -52,12 +52,18 @@
 
 # print(contacts[1]["phone"]["cell"]) #### Going deeper inside of the same index location
 
-my_dictionary = {
-    "hello" :   "world",
-    "sqareOfTwo" : 4,
-    "theMeaningOfLife" : 42,
-    0 : 1
-}
-my_dictionary["theMeaningOfLife"] = "wat"
-wat = my_dictionary["theMeaningOfLife"]
-print(wat)
+# my_dictionary = {
+# #     "hello" :   "world",
+#     "sqareOfTwo" : 4,
+#     "theMeaningOfLife" : 42,
+#     0 : 1
+# }
+# my_dictionary["theMeaningOfLife"] = "wat"
+# wat = my_dictionary["theMeaningOfLife"]
+# print(wat)
+
+
+# # my_dictionary["newKeyName"] = "hello world"
+# # print(my_dictionary)
+#  with open('phonebook.pickle', 'wb') as fh:
+#      pickle.dump(phonebook_dictionary, fh)

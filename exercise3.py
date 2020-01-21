@@ -98,16 +98,16 @@
 
 # print(largest([34,67,89,101]))
 
-3. ### Using pythons key parameter to specify sorting value. Setting this equal to the len function to fid the shortest value.
-def shortest (list_of_strings):
-    return(min(list_of_strings, key=len))
+# 3. ### Using pythons key parameter to specify sorting value. Setting this equal to the len function to fid the shortest value.
+# def shortest (list_of_strings):
+#     return(min(list_of_strings, key=len))
 
-print(shortest(["dog", "bird", "pizza"]))
+# print(shortest(["dog", "bird", "pizza"]))
 
-#4.
-# def longest (list_of_strings):
-#     return(max(list_of_strings, key=len))
+# #4.
+# # def longest (list_of_strings):
+# #     return(max(list_of_strings, key=len))
 
-# print(longest(["dog", "bird", "pizza"]))
+# # print(longest(["dog", "bird", "pizza"]))
 
 
