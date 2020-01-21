@@ -64,7 +64,21 @@
 #     sent_histogram[repeats] += 1
 # print(sent_histogram)
 
-#3.
+# #3.
+# sent_histogram = {}
+# empty_list = []
+# entered_sentence = input("Please enter a sentence... ")
+# sent_to_words = entered_sentence.split()
+# for repeats in sent_to_words:
+#     if repeats not in sent_histogram:
+#         sent_histogram[repeats] = 0
+#     sent_histogram[repeats] += 1
+# for key, value in sorted(sent_histogram.items(), reverse=True):
+#     empty_list.append(key)
+#     print("%s: %s" % (key, value))
+# # print(empty_list[0:3])
+# #or
+
 # sent_histogram = {}
 # entered_sentence = input("Please enter a sentence... ")
 # sent_to_words = entered_sentence.split()
@@ -72,5 +86,6 @@
 #     if repeats not in sent_histogram:
 #         sent_histogram[repeats] = 0
 #     sent_histogram[repeats] += 1
-# for key, value in sorted(sent_histogram.items(), key=lambda kv: kv[1], reverse=True):
-#     print("%s: %s" % (key, value))
+
+# sent_histogram.items()
+# print(sent_histogram)
