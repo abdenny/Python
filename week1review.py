@@ -33,25 +33,25 @@
 #         new_list.append(index)
 # print(new_list)
 
-to_be_leeted = input("Enter the text you'd like to be transformed ").upper()
-leet_list = list(to_be_leeted)
-new_leet = []
-for letters in leet_list:
-    if letters == "A":
-        new_leet.append(4)
-    elif letters == "E":
-        new_leet.append(3)
-    elif letters == "G":
-        new_leet.append(6)   
-    elif letters == "I":
-        new_leet.append(1)   
-    elif letters == "O":
-        new_leet.append(0)   
-    elif letters == "S":
-        new_leet.append(5)   
-    elif letters == "T":
-        new_leet.append(7) 
-    else:
-        new_leet.append(letters)     
-leet = "".join(str(x) for x in new_leet)
-print(leet)
+# to_be_leeted = input("Enter the text you'd like to be transformed ").upper()
+# leet_list = list(to_be_leeted)
+# new_leet = []
+# for letters in leet_list:
+#     if letters == "A":
+#         new_leet.append(4)
+#     elif letters == "E":
+#         new_leet.append(3)
+#     elif letters == "G":
+#         new_leet.append(6)   
+#     elif letters == "I":
+#         new_leet.append(1)   
+#     elif letters == "O":
+#         new_leet.append(0)   
+#     elif letters == "S":
+#         new_leet.append(5)   
+#     elif letters == "T":
+#         new_leet.append(7) 
+#     else:
+#         new_leet.append(letters)     
+# leet = "".join(str(x) for x in new_leet)
+# print(leet)
