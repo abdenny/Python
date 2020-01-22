@@ -26,22 +26,32 @@ class bank_branch():
         for account_objects in self.accounts:
             print(f"{account_objects.fname} {account_objects.mname} {account_objects.lname}, {account_objects.account_type} account, balance of ${account_objects.balance}, the status of the account is: {account_objects.status}")
 
-    # def transfer_funds(self):
-
-
-    # def 
+    def transfer_funds(self, original_account, second_account, trans_ammount):
+        for accounts in self.accounts:
+            if accounts.fname == original_account:
+                accounts.balance -= trans_ammount
+                if accounts.balance < 0:
+                    accounts.balance -= 35
+            if accounts.fname == second_account:
+                accounts.balance += trans_ammount
     
+    def withdraw_funds(self, account_to_withdraw, withdraw_ammount):
+        for accounts in self.accounts:
+            if accounts.fname == account_to_withdraw:
+                accounts.balance -= withdraw_ammount
+                if accounts.balance < 0:
+                    accounts.balance -= 35
+
 def main():
         Regions = bank_branch("regions", "123 Sesame Street")
         action = 1
-        while action != 6:
+        while action != 5:
             print("""
             1.Create an account
-            2. Check accounts
-            3.
-            4.
-            5.
-            6.Close the application
+            2.Check accounts
+            3.Transfer funds
+            4. Withdraw funds
+            5.Close the application
             """)
             action = int(input("What action would you like to take? "))
             if action == 1:
@@ -54,7 +64,18 @@ def main():
                 Regions.add_account(fname, lname, mname, account_type, deposit , account_status)
             elif action == 2:
                 Regions.show_current_accounts()
-            elif action == 6:
+            elif action == 3:
+                original_account = input("What the first name on the account you'd like to transfer FROM? ")
+                second_account = input("What is your first name on the account you'd like to transfer TOO? ")
+                trans_ammount= int(input("How much would you like to transfer? "))
+                Regions.transfer_funds(original_account, second_account, trans_ammount)
+                print(f"You transfered ${trans_ammount} from {original_account}to {second_account}")
+            elif action == 4:
+                account_to_withdraw= input("What the first name on the account you'd like to withdraw from?  ")
+                withdraw_ammount = int(input("How much would you like to withdraw? "))
+                Regions.withdraw_funds(account_to_withdraw, withdraw_ammount)
+                print(f"You withdrew ${withdraw_ammount} from {account_to_withdraw}.")
+            elif action == 5:
                 break
 
 main()
